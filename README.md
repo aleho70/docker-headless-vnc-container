@@ -61,7 +61,10 @@ If you want to get into the container use interactive mode `-it` and `bash`
 
 Build an image from scratch:
 
-    docker build -t consol/centos-xfce-vnc centos-xfce-vnc
+    docker build -t consol/centos-xfce-vnc -f Dockerfile.centos.xfce.vnc .
+    docker build -t consol/centos-icewm-vnc -f Dockerfile.centos.icewm.vnc .
+    docker build -t consol/ubuntu-xfce-vnc -f Dockerfile.ubuntu.xfce.vnc .
+    docker build -t consol/ubuntu-icewm-vnc -f Dockerfile.ubuntu.icewm.vnc .
 
 # Connect & Control
 If the container is started like mentioned above, connect via one of these options:
